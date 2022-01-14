@@ -21,6 +21,8 @@
 		96934C7527915FDC00F96541 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96934C7427915FDC00F96541 /* EditItemView.swift */; };
 		96934C772791678C00F96541 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96934C762791678C00F96541 /* ItemRowView.swift */; };
 		96934C792791715300F96541 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96934C782791715300F96541 /* Binding-OnChange.swift */; };
+		96934C7B279175DC00F96541 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96934C7A279175DC00F96541 /* ProjectHeaderView.swift */; };
+		96934C7D2791790F00F96541 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96934C7C2791790F00F96541 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		96934C7427915FDC00F96541 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		96934C762791678C00F96541 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		96934C782791715300F96541 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
+		96934C7A279175DC00F96541 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
+		96934C7C2791790F00F96541 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				9641FF44279011C000BA0A1E /* UltimatePortfolioApp.swift */,
 				9641FF46279011C000BA0A1E /* ContentView.swift */,
 				96934C7427915FDC00F96541 /* EditItemView.swift */,
+				96934C7A279175DC00F96541 /* ProjectHeaderView.swift */,
 				964C87FF279111A900C2B98D /* Item-CoreDataHelpers.swift */,
 				96934C72279112C000F96541 /* Project-CoreDataHelpers.swift */,
 				964C87F92790328D00C2B98D /* HomeView.swift */,
@@ -87,6 +92,7 @@
 				96934C782791715300F96541 /* Binding-OnChange.swift */,
 				96934C762791678C00F96541 /* ItemRowView.swift */,
 				9641FF55279014A200BA0A1E /* DataController.swift */,
+				96934C7C2791790F00F96541 /* Colors.xcassets */,
 				9641FF52279011DB00BA0A1E /* Main.xcdatamodeld */,
 				9641FF48279011C700BA0A1E /* Assets.xcassets */,
 				9641FF4A279011C700BA0A1E /* Preview Content */,
@@ -168,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96934C7D2791790F00F96541 /* Colors.xcassets in Resources */,
 				9641FF4C279011C700BA0A1E /* Preview Assets.xcassets in Resources */,
 				9641FF49279011C700BA0A1E /* Assets.xcassets in Resources */,
 			);
@@ -181,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				964C87FC2790333500C2B98D /* ProjectsView.swift in Sources */,
+				96934C7B279175DC00F96541 /* ProjectHeaderView.swift in Sources */,
 				9641FF54279011DB00BA0A1E /* Main.xcdatamodeld in Sources */,
 				96934C73279112C000F96541 /* Project-CoreDataHelpers.swift in Sources */,
 				9641FF56279014A200BA0A1E /* DataController.swift in Sources */,
