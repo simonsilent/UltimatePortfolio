@@ -30,6 +30,7 @@
 		96FC33AE2792DD410088A500 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 96FC33AD2792DD410088A500 /* Awards.json */; };
 		96FC33B02792DE390088A500 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC33AF2792DE390088A500 /* Award.swift */; };
 		96FC33B22792DEFB0088A500 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC33B12792DEFB0088A500 /* AwardsView.swift */; };
+		96FC33B42792EF680088A500 /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC33B32792EF680088A500 /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		96FC33AD2792DD410088A500 /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		96FC33AF2792DE390088A500 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		96FC33B12792DEFB0088A500 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		96FC33B32792EF680088A500 /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				96934C782791715300F96541 /* Binding-OnChange.swift */,
 				96934C762791678C00F96541 /* ItemRowView.swift */,
 				9641FF55279014A200BA0A1E /* DataController.swift */,
+				96FC33B32792EF680088A500 /* Color-Additions.swift */,
 				96FC33AD2792DD410088A500 /* Awards.json */,
 				96934C7C2791790F00F96541 /* Colors.xcassets */,
 				9641FF52279011DB00BA0A1E /* Main.xcdatamodeld */,
@@ -214,6 +217,7 @@
 				96FC33B22792DEFB0088A500 /* AwardsView.swift in Sources */,
 				9641FF54279011DB00BA0A1E /* Main.xcdatamodeld in Sources */,
 				96934C73279112C000F96541 /* Project-CoreDataHelpers.swift in Sources */,
+				96FC33B42792EF680088A500 /* Color-Additions.swift in Sources */,
 				96934C7F27918CAD00F96541 /* EditProjectView.swift in Sources */,
 				9641FF56279014A200BA0A1E /* DataController.swift in Sources */,
 				96FC33AA2792C7CF0088A500 /* SelectSomethingView.swift in Sources */,
