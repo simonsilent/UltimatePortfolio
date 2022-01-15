@@ -24,9 +24,12 @@ extension Project {
   }
   
   var projectItems: [Item] {
-    let itemsArray = items?.allObjects as? [Item] ?? []
-    return itemsArray.sorted { first, second in
-      // true 则 first 在前 second 在後
+    items?.allObjects as? [Item] ?? []
+  }
+  
+  var projectItemsDefaultSorted: [Item] {
+    projectItems.sorted { first, second in
+      // true 则 first 在前 second 在後, 未完成在前，已完成在後
       if first.completed == false {
         if second.completed == true {
           return true
@@ -37,14 +40,14 @@ extension Project {
         }
       }
       
-      // both completed or incompleted
+      // both completed or incompleted，依优先级从高到低
       if first.priority > second.priority {
         return true
       } else if first.priority < second.priority {
         return false
       }
       
-      // both completed/incompleted and with the same priority
+      // both completed/incompleted and with the same priority，依創建時間從过去到現在
       return first.itemCreationDate < second.itemCreationDate
     }
   }
@@ -68,5 +71,23 @@ extension Project {
     project.creationDate = Date()
     
     return project
+  }
+  
+  func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
+    switch sortOrder {
+      case .optimized:
+        return projectItemsDefaultSorted
+      case .title:
+        return projectItems.sorted { $0.itemTitle < $1.itemTitle }
+      case .creationDate:
+        return projectItems.sorted(by: \Item.itemCreationDate)
+    }
+  }
+  
+  func projectItems(using sortDescriptor: NSSortDescriptor?) -> [Item] {
+    guard let sortDescriptor = sortDescriptor else {
+      return projectItemsDefaultSorted
+    }
+    return projectItems.sorted(by: sortDescriptor)
   }
 }
