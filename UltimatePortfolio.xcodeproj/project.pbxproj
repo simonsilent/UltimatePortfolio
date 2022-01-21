@@ -29,6 +29,7 @@
 		96C1A73F27984084005E95FA /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 96C1A74127984084005E95FA /* Awards.json */; };
 		96C1A744279900A1005E95FA /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C1A743279900A1005E95FA /* ItemListView.swift */; };
 		96C1A746279901F1005E95FA /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C1A745279901F1005E95FA /* ProjectSummaryView.swift */; };
+		96C1A74F279A9E38005E95FA /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C1A74E279A9E38005E95FA /* ProjectsViewModel.swift */; };
 		96FC33A827926ED40088A500 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC33A727926ED40088A500 /* Sequence-Sorting.swift */; };
 		96FC33AA2792C7CF0088A500 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC33A92792C7CF0088A500 /* SelectSomethingView.swift */; };
 		96FC33AC2792D3E60088A500 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC33AB2792D3E60088A500 /* Bundle-Decodable.swift */; };
@@ -66,6 +67,7 @@
 		96C1A7422798408B005E95FA /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = hu; path = hu.lproj/Awards.json; sourceTree = "<group>"; };
 		96C1A743279900A1005E95FA /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		96C1A745279901F1005E95FA /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
+		96C1A74E279A9E38005E95FA /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
 		96FC33A727926ED40088A500 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		96FC33A92792C7CF0088A500 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		96FC33AB2792D3E60088A500 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				964C87FB2790333500C2B98D /* ProjectsView.swift */,
+				96C1A74E279A9E38005E95FA /* ProjectsViewModel.swift */,
 				96FC33A92792C7CF0088A500 /* SelectSomethingView.swift */,
 				96934C7A279175DC00F96541 /* ProjectHeaderView.swift */,
 				96934C762791678C00F96541 /* ItemRowView.swift */,
@@ -306,6 +309,7 @@
 				964C87FA2790328D00C2B98D /* HomeView.swift in Sources */,
 				9641FF45279011C000BA0A1E /* UltimatePortfolioApp.swift in Sources */,
 				964C8800279111A900C2B98D /* Item-CoreDataHelpers.swift in Sources */,
+				96C1A74F279A9E38005E95FA /* ProjectsViewModel.swift in Sources */,
 				96934C7527915FDC00F96541 /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
