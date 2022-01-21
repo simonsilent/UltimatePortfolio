@@ -46,7 +46,7 @@
 		9641FF53279011DB00BA0A1E /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		9641FF55279014A200BA0A1E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		9641FF572790301B00BA0A1E /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
-		9641FF582790303C00BA0A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9641FF582790303C00BA0A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		964C87F72790317500C2B98D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		964C87F92790328D00C2B98D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		964C87FB2790333500C2B98D /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
@@ -106,34 +106,15 @@
 		9641FF43279011C000BA0A1E /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
-				9641FF582790303C00BA0A1E /* Info.plist */,
-				9641FF572790301B00BA0A1E /* UltimatePortfolio.entitlements */,
-				9641FF44279011C000BA0A1E /* UltimatePortfolioApp.swift */,
+				96C1A747279A3007005E95FA /* Activities */,
+				96C1A74B279A316B005E95FA /* Extensions */,
+				96C1A74D279A3538005E95FA /* Configuration */,
+				96C1A74C279A3532005E95FA /* Localization */,
 				9641FF46279011C000BA0A1E /* ContentView.swift */,
-				96934C7427915FDC00F96541 /* EditItemView.swift */,
-				96934C7E27918CAD00F96541 /* EditProjectView.swift */,
-				96934C7A279175DC00F96541 /* ProjectHeaderView.swift */,
-				964C87FF279111A900C2B98D /* Item-CoreDataHelpers.swift */,
-				96934C72279112C000F96541 /* Project-CoreDataHelpers.swift */,
-				964C87F92790328D00C2B98D /* HomeView.swift */,
-				96C1A745279901F1005E95FA /* ProjectSummaryView.swift */,
-				96C1A743279900A1005E95FA /* ItemListView.swift */,
-				96C1A73827981032005E95FA /* Localizable.strings */,
-				96C1A73C27984021005E95FA /* Localizable.stringsdict */,
-				964C87FB2790333500C2B98D /* ProjectsView.swift */,
-				96FC33AB2792D3E60088A500 /* Bundle-Decodable.swift */,
-				96FC33AF2792DE390088A500 /* Award.swift */,
-				96FC33B12792DEFB0088A500 /* AwardsView.swift */,
-				96FC33A92792C7CF0088A500 /* SelectSomethingView.swift */,
-				96FC33A727926ED40088A500 /* Sequence-Sorting.swift */,
-				96934C782791715300F96541 /* Binding-OnChange.swift */,
-				96934C762791678C00F96541 /* ItemRowView.swift */,
 				9641FF55279014A200BA0A1E /* DataController.swift */,
-				96FC33B32792EF680088A500 /* Color-Additions.swift */,
-				96C1A74127984084005E95FA /* Awards.json */,
-				96934C7C2791790F00F96541 /* Colors.xcassets */,
-				9641FF52279011DB00BA0A1E /* Main.xcdatamodeld */,
+				9641FF44279011C000BA0A1E /* UltimatePortfolioApp.swift */,
 				9641FF48279011C700BA0A1E /* Assets.xcassets */,
+				96934C7C2791790F00F96541 /* Colors.xcassets */,
 				9641FF4A279011C700BA0A1E /* Preview Content */,
 			);
 			path = UltimatePortfolio;
@@ -153,6 +134,81 @@
 				964C87F72790317500C2B98D /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96C1A747279A3007005E95FA /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				96C1A748279A302F005E95FA /* Home */,
+				96C1A74A279A3038005E95FA /* Projects */,
+				96C1A749279A3034005E95FA /* Award */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		96C1A748279A302F005E95FA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				964C87F92790328D00C2B98D /* HomeView.swift */,
+				96C1A745279901F1005E95FA /* ProjectSummaryView.swift */,
+				96C1A743279900A1005E95FA /* ItemListView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		96C1A749279A3034005E95FA /* Award */ = {
+			isa = PBXGroup;
+			children = (
+				96FC33B12792DEFB0088A500 /* AwardsView.swift */,
+				96FC33AF2792DE390088A500 /* Award.swift */,
+				96C1A74127984084005E95FA /* Awards.json */,
+			);
+			path = Award;
+			sourceTree = "<group>";
+		};
+		96C1A74A279A3038005E95FA /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				964C87FB2790333500C2B98D /* ProjectsView.swift */,
+				96FC33A92792C7CF0088A500 /* SelectSomethingView.swift */,
+				96934C7A279175DC00F96541 /* ProjectHeaderView.swift */,
+				96934C762791678C00F96541 /* ItemRowView.swift */,
+				96934C7E27918CAD00F96541 /* EditProjectView.swift */,
+				96934C7427915FDC00F96541 /* EditItemView.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		96C1A74B279A316B005E95FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				964C87FF279111A900C2B98D /* Item-CoreDataHelpers.swift */,
+				96934C72279112C000F96541 /* Project-CoreDataHelpers.swift */,
+				96FC33AB2792D3E60088A500 /* Bundle-Decodable.swift */,
+				96FC33A727926ED40088A500 /* Sequence-Sorting.swift */,
+				96934C782791715300F96541 /* Binding-OnChange.swift */,
+				96FC33B32792EF680088A500 /* Color-Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		96C1A74C279A3532005E95FA /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				96C1A73827981032005E95FA /* Localizable.strings */,
+				96C1A73C27984021005E95FA /* Localizable.stringsdict */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		96C1A74D279A3538005E95FA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9641FF582790303C00BA0A1E /* Info.plist */,
+				9641FF52279011DB00BA0A1E /* Main.xcdatamodeld */,
+				9641FF572790301B00BA0A1E /* UltimatePortfolio.entitlements */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,14 +466,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/Configuration/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = GV8A9ZGNT5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
+				INFOPLIST_FILE = UltimatePortfolio/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -441,14 +497,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/Configuration/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = GV8A9ZGNT5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
+				INFOPLIST_FILE = UltimatePortfolio/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
