@@ -38,7 +38,9 @@ extension ProjectsView {
         sectionNameKeyPath: nil,
         cacheName: nil
       )
-      // 3. set delegate
+      // 3. set self as delegate, need to conform NSFetchedResultsDelegate
+      // which requires self to conform to NSObject
+      // which requires super.init()
       super.init()
       projectsController.delegate = self
       // 4. run the fetch request, assign the results into our array
@@ -48,6 +50,8 @@ extension ProjectsView {
       } catch {
         print("Failed to fetch our projects.")
       }
+      // 5. get notified when data changed, see delegate method
+      // down at the bottom of this page.
     }
     
     func addProject() {

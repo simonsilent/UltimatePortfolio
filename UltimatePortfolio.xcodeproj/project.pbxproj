@@ -30,6 +30,7 @@
 		96C1A744279900A1005E95FA /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C1A743279900A1005E95FA /* ItemListView.swift */; };
 		96C1A746279901F1005E95FA /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C1A745279901F1005E95FA /* ProjectSummaryView.swift */; };
 		96C1A74F279A9E38005E95FA /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C1A74E279A9E38005E95FA /* ProjectsViewModel.swift */; };
+		96C1A751279AF604005E95FA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C1A750279AF604005E95FA /* HomeViewModel.swift */; };
 		96FC33A827926ED40088A500 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC33A727926ED40088A500 /* Sequence-Sorting.swift */; };
 		96FC33AA2792C7CF0088A500 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC33A92792C7CF0088A500 /* SelectSomethingView.swift */; };
 		96FC33AC2792D3E60088A500 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC33AB2792D3E60088A500 /* Bundle-Decodable.swift */; };
@@ -68,6 +69,7 @@
 		96C1A743279900A1005E95FA /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		96C1A745279901F1005E95FA /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
 		96C1A74E279A9E38005E95FA /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
+		96C1A750279AF604005E95FA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		96FC33A727926ED40088A500 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		96FC33A92792C7CF0088A500 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		96FC33AB2792D3E60088A500 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				964C87F92790328D00C2B98D /* HomeView.swift */,
+				96C1A750279AF604005E95FA /* HomeViewModel.swift */,
 				96C1A745279901F1005E95FA /* ProjectSummaryView.swift */,
 				96C1A743279900A1005E95FA /* ItemListView.swift */,
 			);
@@ -294,6 +297,7 @@
 				96934C7B279175DC00F96541 /* ProjectHeaderView.swift in Sources */,
 				96FC33B22792DEFB0088A500 /* AwardsView.swift in Sources */,
 				9641FF54279011DB00BA0A1E /* Main.xcdatamodeld in Sources */,
+				96C1A751279AF604005E95FA /* HomeViewModel.swift in Sources */,
 				96934C73279112C000F96541 /* Project-CoreDataHelpers.swift in Sources */,
 				96FC33B42792EF680088A500 /* Color-Additions.swift in Sources */,
 				96934C7F27918CAD00F96541 /* EditProjectView.swift in Sources */,
